@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="style.css" type="text/css" />
     <title>Ford Mach-E</title>
   </head>
-  <body>
+  <body id="app-body">
     <section class="hero-section" id="hero-section">
       <header class="header">
         <nav class="navbar">
@@ -95,12 +95,14 @@
           </p>
         </div>
       </div>
-      <div class="video-player hidden">
-        <video width="100%" controls avutoplay>
-          <source src="video/video-1.m4v" type="video/mp4" />
-        </video>
-      </div>
     </section>
+    <div class="video-container hidden"></div>
+    <div class="video-player hidden">
+      <video width="100%" controls avutoplay class="video">
+        <source src="video/video-1.m4v" type="video/mp4" />
+      </video>
+      <span class="btn-close">&#10006;</span>
+    </div>
     <section class="prebook" id="prebook">
       <div class="prebook-caption">
         <!-- <h1 class="prebook-title-1">Pre-Book NOW</h1> -->
@@ -117,7 +119,6 @@
         </div>
         <div class="row">
           <label for="address">Address</label>
-          <!-- <input type="text" class="input-address" /> -->
           <textarea name="address" id="" class="input-address"></textarea>
         </div>
         <button type="submit" class="submit">Book Now</button>
