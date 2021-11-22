@@ -159,6 +159,12 @@ body {
   margin-top: -2rem;
   -webkit-text-stroke-color: #d62f45;
   color: transparent;
+  transition: text-shadow 0.5s ease, transform 0.5s ease;
+}
+
+.stroke-exil:hover {
+  transform: translateX(3%);
+  text-shadow: 0 0 10px rgb(228, 49, 82), 0 0 60px #fc2048;
 }
 
 .overview-img {
@@ -224,6 +230,63 @@ body {
   transform: scale(80%);
 }
 
+.media {
+  height: 100vh;
+  overflow: hidden;
+  color: white;
+  max-width: 120rem;
+  margin: 0 auto;
+}
+
+.media-caption {
+  font-family: "Orbitron", sans-serif;
+  -webkit-text-stroke-color: #20fcf2;
+  font-size: 6rem;
+  margin-top: 10rem;
+  text-align: center;
+}
+
+.video-content {
+  display: flex;
+  justify-content: space-around;
+}
+
+.video-1,
+.video-2 {
+  width: 45rem;
+}
+
+.thumbnail {
+  width: 45rem;
+  margin: 2rem 0 0 0;
+  transition: transform 0.3s ease;
+}
+
+.video-player {
+  position: relative;
+  top: -90%;
+  z-index: 10;
+  /* left: 50%; */
+  /* transform: translateY(50%); */
+}
+
+.hidden {
+  display: none;
+}
+
+.thumbnail:hover {
+  transform: scale(1.05);
+}
+
+.video-content h3 {
+  font-size: 3rem;
+  margin: 2rem 0;
+}
+
+.video-content p {
+  font-size: 2rem;
+  line-height: 3rem;
+}
 .prebook {
   height: 100vh;
   overflow: hidden;
