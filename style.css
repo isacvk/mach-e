@@ -223,3 +223,95 @@ body {
   left: -15%;
   transform: scale(80%);
 }
+
+.prebook {
+  height: 100vh;
+  overflow: hidden;
+  margin: 0 auto;
+  /* background-color: blanchedalmond; */
+}
+
+.prebook-caption {
+  text-align: center;
+  font-family: "Orbitron", sans-serif;
+  margin-top: 14rem;
+}
+
+.prebook-title-1 {
+  font-size: 6rem;
+  color: #20fcf2;
+}
+
+.prebook-title-2 {
+  font-size: 6rem;
+  position: relative;
+  top: -48%;
+  -webkit-text-stroke-color: #20fcf2;
+}
+
+form {
+  width: 50rem;
+  margin: 0 auto;
+}
+
+.row {
+  color: white;
+  margin-top: 4rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+label {
+  font-size: 2rem;
+}
+
+input {
+  width: 30rem;
+  height: 5rem;
+  border: none;
+  border-radius: 5rem;
+  outline: none;
+  padding: 0 2rem;
+  color: white;
+  font-size: 2rem;
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.input-address {
+  resize: none;
+  font-family: "Raleway", sans-serif;
+  height: 15rem;
+  border: none;
+  border-radius: 3rem;
+  outline: none;
+  padding: 2rem 2rem;
+  color: white;
+  font-size: 2rem;
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.submit {
+  font-family: "Raleway", sans-serif;
+  border: none;
+  background-color: #20fcf2;
+  padding: 1rem 3rem;
+  font-size: 2rem;
+  border-radius: 1.5rem;
+  margin-top: 4rem;
+  float: right;
+  transition: transform 0.3s ease;
+}
+
+.submit:hover {
+  cursor: pointer;
+  transform: translateX(-1rem);
+}
+
+.prebook-img {
+  position: relative;
+  top: -100%;
+  left: -10%;
+  z-index: -10;
+  transform: scale(88%);
+  opacity: 0.4;
+}
