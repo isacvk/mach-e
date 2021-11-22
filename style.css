@@ -34,7 +34,6 @@ body {
   align-items: center;
   background-color: #141923;
   border-radius: 3.5rem;
-  /* padding-left:8rem; */
   z-index: 10;
 }
 
@@ -45,7 +44,7 @@ body {
 
 .nav-links {
   font-size: 1.6rem;
-  margin: 0 6rem 0 6rem;
+  margin: 0 6rem;
   text-decoration: none;
   color: white;
 }
@@ -59,6 +58,15 @@ body {
   position: relative;
   top: -12rem;
   z-index: -10;
+}
+
+.stroke-effect {
+  -webkit-text-stroke-width: 0.3rem;
+  color: transparent;
+}
+
+.hero-stroke {
+  -webkit-text-stroke-color: #20fcf2;
 }
 
 .hero-title {
@@ -77,9 +85,6 @@ body {
 
 .hero-title > h1 {
   font-size: 16rem;
-  -webkit-text-stroke-width: 0.3rem;
-  -webkit-text-stroke-color: #20fcf2;
-  color: transparent;
   margin-top: -6rem;
   transition: 1s ease;
 }
@@ -106,6 +111,9 @@ body {
 .btn-explore {
   font-size: 2rem;
   border: 0.2rem solid #20fcf2;
+  background-color: #20fcf2;
+  color: black;
+  border-radius: 2rem;
   position: absolute;
   top: 90%;
   left: 50%;
@@ -115,8 +123,11 @@ body {
 
 .btn-explore:hover {
   border-radius: 2rem;
-  background-color: #20fcf2;
-  color: black;
+  background-color: #14c5bc;
+  color: white;
+  /* transform: translate(5%, -5%); */
+  padding: 0.5rem 3rem;
+  /* color: black; */
 }
 
 .overview {
@@ -142,11 +153,10 @@ body {
   /* display: inline; */
 }
 
-.stroke-effect {
+.stroke-exil {
   display: block;
   font-size: 12rem;
   margin-top: -2rem;
-  -webkit-text-stroke-width: 0.3rem;
   -webkit-text-stroke-color: #d62f45;
   color: transparent;
 }
@@ -161,5 +171,55 @@ body {
 
 .tech {
   height: 100vh;
-  background-color: burlywood;
+  overflow: hidden;
+  font-size: 4rem;
+  /* max-width: 120rem; */
+  margin: 0 auto;
+}
+
+.tech-caption {
+  text-align: center;
+  margin-top: 15rem;
+}
+
+.tech-caption > * {
+  font-size: 6rem;
+  font-family: "Orbitron", sans-serif;
+  margin: 0 2rem;
+}
+
+.tech-title-1 {
+  color: #befff7;
+}
+
+.tech-stroke-1 {
+  -webkit-text-stroke-color: #20fcf2;
+}
+.tech-title-2 {
+  color: #ffd0d6;
+}
+
+.tech-stroke-2 {
+  -webkit-text-stroke-color: #fc2048;
+}
+
+.tech-info {
+  color: white;
+  width: 30%;
+  float: right;
+  margin: 4rem 15rem;
+}
+
+.tech-info > p {
+  font-size: 2rem;
+  margin-top: 5rem;
+  line-height: 3rem;
+}
+
+.tech-img {
+  position: relative;
+  z-index: -10;
+  top: -105%;
+  left: -15%;
+  transform: scale(80%);
 }
