@@ -14,7 +14,7 @@ body {
   font-family: "Raleway", sans-serif;
 }
 
-.hero-section {
+.sec-defaults {
   height: 100vh;
   overflow: hidden;
 }
@@ -39,7 +39,7 @@ body {
 
 .logo {
   width: 15rem;
-  padding: 0 2rem 0 2rem;
+  padding: 0 2rem;
 }
 
 .nav-links {
@@ -125,16 +125,12 @@ body {
   border-radius: 2rem;
   background-color: #14c5bc;
   color: white;
-  /* transform: translate(5%, -5%); */
   padding: 0.5rem 3rem;
-  /* color: black; */
 }
 
 .overview {
-  height: 100vh;
   max-width: 120rem;
   margin: 0 auto;
-  overflow: hidden;
 }
 
 .overview > h1 {
@@ -150,7 +146,6 @@ body {
   width: 50rem;
   line-height: 3rem;
   margin-top: 4rem;
-  /* display: inline; */
 }
 
 .stroke-exil {
@@ -173,14 +168,6 @@ body {
   top: -60%;
   transform: scale(120%);
   z-index: -1;
-}
-
-.tech {
-  height: 100vh;
-  overflow: hidden;
-  font-size: 4rem;
-  /* max-width: 120rem; */
-  margin: 0 auto;
 }
 
 .tech-caption {
@@ -231,8 +218,6 @@ body {
 }
 
 .media {
-  height: 100vh;
-  overflow: hidden;
   color: white;
   max-width: 120rem;
   margin: 0 auto;
@@ -314,8 +299,6 @@ body {
   line-height: 3rem;
 }
 .prebook {
-  height: 100vh;
-  overflow: hidden;
   margin: 0 auto;
 }
 
@@ -418,4 +401,19 @@ input {
 
 .response-style > h1:hover {
   transform: translateX(3%);
+}
+
+.footer {
+  color: white;
+  max-width: 120rem;
+  margin: 0 auto;
+  padding: 4rem 0;
+}
+
+.footer > * {
+  font-size: 1.2rem;
+}
+
+.footer > p {
+  padding: 1.5rem 0;
 }
