@@ -16,4 +16,5 @@ btnClose.addEventListener("click", function () {
   //   console.log("Closed");
   videoBG.classList.toggle("hidden");
   video.classList.toggle("hidden");
+  appBody.classList.toggle("stop-scroll");
 });
