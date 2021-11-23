@@ -272,6 +272,7 @@ body {
 }
 
 .video-player {
+  width: 80vw;
   position: fixed;
   background-color: black;
   top: 50%;
@@ -285,8 +286,8 @@ body {
   font-size: 4rem;
   cursor: pointer;
   position: absolute;
-  top: -30%;
-  right: -30%;
+  top: -5%;
+  right: -5%;
 }
 
 .hidden {
@@ -379,7 +380,7 @@ input {
 
 .submit {
   font-family: "Raleway", sans-serif;
-  border: none;
+  color: black;
   background-color: #20fcf2;
   padding: 1rem 3rem;
   font-size: 2rem;
